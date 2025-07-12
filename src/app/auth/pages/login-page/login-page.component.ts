@@ -6,4 +6,10 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   templateUrl: './login-page.component.html',
 })
-export class LoginPageComponent { }
+export class LoginPageComponent {
+
+  onSubmit(email:string,password:string){
+    console.log({email,password})
+  }
+
+ }
